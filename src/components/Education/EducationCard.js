@@ -3,7 +3,7 @@ export default function EducationCard(args) {
     const text_container = (schoolname, schooldeets,timeframe) => {
         return(
             <div class="p-6 col-span-2 justify-start">
-      <h5 class="text-gray-900 text-xl font-medium mb-2">{schoolname}</h5>
+      <h5 class="text-gray-900 dark: text-xl font-medium mb-2">{schoolname}</h5>
       <p class="text-gray-700 text-base mb-4">
         {schooldeets}
       </p>
@@ -19,7 +19,7 @@ export default function EducationCard(args) {
                      <>
                         
                      {text_container(args.schoolname, args.schooldeets, args.timeframe)}
-                     <div className="col-span-1 flex items-center">adad
+                     <div className="col-span-1 flex items-center">
                          <img class=" w-fit h-fit md:h-auto object-cover md:w-48 rounded-b-lg md:rounded-none md:rounded-r-lg" src={args.logo} alt="" />
                      </div>
                      

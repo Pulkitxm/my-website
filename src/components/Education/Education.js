@@ -15,7 +15,7 @@ export default function Education() {
         timeframe:"August 2016 - May 2020"
     };
     const n = 2; //number of education cards
-    return(<div className=" grid gap-2 grid-rows">
+    return(<div className=" grid gap-2 grid-rows ">
     <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
     <EducationCard flip="true" logo={sppu} schoolname={nbn_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={nbn_deets.timeframe}/>
     <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={northesatern_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
