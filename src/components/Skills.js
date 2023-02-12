@@ -9,6 +9,7 @@ import javascript from '../assets/skills/javascript.svg'
 import reactIcon from '../assets/skills/react.svg'
 import tailwind from '../assets/skills/tailwind.svg'
 import git from "../assets/skills/git.svg"
+import OpenCV from '../assets/skills/OpenCV.svg'
 
 export default function Skills(){
     const settings = {centerMode: true,
@@ -73,7 +74,7 @@ export default function Skills(){
     //   // instead of a settings object
     // ]};
     return (
-        <div id="skills" className="mt-4">
+        <div id="skills" className="mt-4 block py-0.5 mb-2">
             <h1 className="text-4xl font-bold">Skills</h1>
             <p className=" text-2xl text-gray-400">Here are some of my skills</p>
 
@@ -81,11 +82,11 @@ export default function Skills(){
             <Slider {...settings}>
             <SkillCard name="Python" experience="3 years" img={PythonLogo}/>
             <SkillCard name="PyTorch" experience="1 year" img={PyTorch}/>
+            <SkillCard name="OpenCV" experience="1 year" img={OpenCV}/>
             <SkillCard name="JavaScript" experience="1 year" img={javascript}/>
             <SkillCard name="react" experience="1 year" img={reactIcon} />
             <SkillCard name="TailWind"  img={tailwind} />
             <SkillCard name="Git" experience="1 year" img={git} />
-
             </Slider>
             </div>
         </div>
