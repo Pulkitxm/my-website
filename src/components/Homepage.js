@@ -1,15 +1,16 @@
 
 import React, {useState} from 'react';
-import logo from '../assets/wizardLogo.svg'; // Need to change this to some other image
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {faCircleArrowRight, } from "@fortawesome/free-solid-svg-icons";
 // import {  faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import hr from '../assets/curve-hr.svg'
+import profile from '../assets/0.5x/Asset 1@0.5x.png'
+import text_writer from './text_writer';
 import "./Homepage.css"
 
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
-
+    const lines = ["programs.","blogs.","poems.", "stories."]
+    text_writer();
     return(
         <>
             {
@@ -21,17 +22,22 @@ export default function Homepage()  {
                 </div>
                 : null
         }
-        <div id="home" className="flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center text-white relative">
-            <div className='md:w-3/6 md:p-4'>
-                <img data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200" src={logo} onLoad={() => setLoaded(false)}/>
-            </div>
+        <div id="home" className={`flex w-full h-screen flex-col md:flex-row gap-5 items-center justify-center relative `}>
+        
+            <div className='w-16 md:w-32 lg:w-48'>
+                <img data-aos="flip-right" data-aos-duration="1500" data-aos-offset="200" className='rounded-full' src={profile} onLoad={() => setLoaded(false)}/>
+            </div> 
             <div className='md:w-3/6' data-aos="fade-right" data-aos-duration="1000" data-aos-offset="100" >
+            
+            <link href="https://fonts.googleapis.com/css?family=Raleway:200,100,400" rel="stylesheet" type="text/css" />
                 <div className=" flex flex-col w-full mt-8">
-                    <div className='typewriter w-min'>
-                    <p className="text-xl text-gray-400">Hi, I'm</p>
-                    <h1 className="text-2xl font-bold">Siddhant Shah</h1>
-                    <p class="text-xl font-bold text-gray-300">Computer Science</p>
-                    </div>
+                <p className="text-4xl text-gray-400">Hi, I'm</p>
+                <h1 className="text-6xl font-bold">Siddhant Shah</h1>
+                 <h4 className='text-4xl '>and I write <span
+                    className="txt-rotate"
+                    data-period="200"
+                    data-rotate={lines}
+                    ></span></h4>
                 </div>
             </div>
         </div>
