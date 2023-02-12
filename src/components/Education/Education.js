@@ -14,10 +14,11 @@ export default function Education() {
         A few lines are not enough to show my gratitude, but I came here looking for Copper, and I found Gold.`,
         timeframe:"August 2016 - May 2020"
     };
-    const n = 3; //number of education cards
-    return(<div className={"align-text grid grid-rows-"+n}>
-    <EducationCard flip="true"  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={northesatern_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
+    const n = 2; //number of education cards
+    return(<div className=" grid gap-2 grid-rows">
+    <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
     <EducationCard flip="true" logo={sppu} schoolname={nbn_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={nbn_deets.timeframe}/>
+    <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={northesatern_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
     </div>
     );
 }
