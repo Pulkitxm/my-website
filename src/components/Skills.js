@@ -74,7 +74,8 @@ export default function Skills(){
     //   // instead of a settings object
     // ]};
     return (
-        <div id="skills" className="mt-4 block py-0.5 mb-2">
+        
+        <div id="skills" className="mt-4  py-0.5 mb-2 ">
             <h1 className="text-4xl font-bold">Skills</h1>
             <p className=" text-2xl text-gray-400">Here are some of my skills</p>
 
@@ -90,6 +91,7 @@ export default function Skills(){
             </Slider>
             </div>
         </div>
+    
     );
 }
 

@@ -5,7 +5,7 @@ export default function Navbar() {
     const [darkToggle, setDarkToggle] = React.useState(false);
 
     return (
-    <div className='fixed z-50 bg-dark-500 w-full top-0 left-0 px-8 py-2 lg:px-20 xl:px-36 border-b-2 border-zinc-300 dark:border-b-2 dark:border-teal-200'>
+    <div className='fixed z-50 bg-dark-500 w-full top-0 left-0 px-8 py-2 lg:px-20 xl:px-36 border-b border-zinc-300 dark:border-b dark:border-teal-800'>
         <div className="flex justify-between items-center text-white">
             <img src={logo} className=" w-10 rounded-full" alt="logo by tirch studio" />
             <a href="#home" className='text-2xl'>Siddhant Shah</a>  

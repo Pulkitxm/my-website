@@ -1,0 +1,46 @@
+* {
+    --hue: 200;
+    --saturation: 100%;
+    --lightness: 50%;
+  
+    --brand-dim: hsl(var(--hue) calc(var(--saturation) / 1.25) calc(var(--lightness) / 1.25));
+    --text1-dim: hsl(var(--hue) 15% 75%);
+    --text2-dim: hsl(var(--hue) 10% 61%);
+    --surface1-dim: hsl(var(--hue) 10% 20%);
+    --surface2-dim: hsl(var(--hue) 10% 25%);
+    --surface3-dim: hsl(var(--hue) 5%  30%);
+    --surface4-dim: hsl(var(--hue) 5% 35%);
+    --surface-shadow-dim: var(--hue) 30% 13%;
+    --shadow-strength-dim: .2;
+  }
+  
+  .brand .swatch { background: var(--brand-dim) }
+  .text1 .swatch { background: var(--text1-dim) }
+  .text2 .swatch { background: var(--text2-dim) }
+  .surface1 .swatch { background: var(--surface1-dim) }
+  .surface2 .swatch { background: var(--surface2-dim) }
+  .surface3 .swatch { background: var(--surface3-dim) }
+  .surface4 .swatch { background: var(--surface4-dim) }
+  .shadow .swatch { background: hsl(var(--surface-shadow-dim) / var(--shadow-strength-dim)) }
+  
+  figure {
+    display: flex;
+    gap: 1ch;
+    place-items: center;
+    font-size: 2rem;
+    font-weight: 200;
+  }
+  
+  .swatch {
+    flex-shrink: 0;
+    inline-size: 3ch;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    box-shadow: inset 0 0 0 1px hsl(0 0% 50% / 25%);
+  }
+  
+  @media (max-width: 1500px) {
+    figcaption {
+      display: none;
+    }
+  }

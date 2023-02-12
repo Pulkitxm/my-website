@@ -5,7 +5,9 @@ import React, {useState} from 'react';
 // import {  faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import profile from '../assets/0.5x/Asset 1@0.5x.png'
 import text_writer from './text_writer';
-import "./Homepage.css"
+import "./Homepage.css";
+import Skills from './Skills';
+import Education from './Education/Education';
 
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
@@ -41,6 +43,9 @@ export default function Homepage()  {
                 </div>
             </div>
         </div>
+        <Education/>
+        <Skills/>
+      
         </>
     )
 }
