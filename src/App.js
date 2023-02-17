@@ -12,7 +12,7 @@ function App() {
     AOS.init();
   }, [])
   return (
-    <div className="App dark">
+    <div className="App ">
       <div className="px-6 lg:px-20 xl:px-36 bg-slate-100 dark:bg-dark-900 dark:text-white ">
       <Navbar />
       <Homepage/>

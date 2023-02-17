@@ -3,7 +3,7 @@ import React, {useState} from 'react';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import {faCircleArrowRight, } from "@fortawesome/free-solid-svg-icons";
 // import {  faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
-import profile from '../assets/0.5x/Asset 1@0.5x.png'
+import profile from '../assets/n.jpg'
 import text_writer from './text_writer';
 import "./Homepage.css";
 import Skills from './Skills';

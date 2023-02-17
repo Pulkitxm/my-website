@@ -1,4 +1,4 @@
-import logo from '../assets/wizardLogo.svg';
+import logo from '../assets/n.jpg';
 import resume from "../assets/SiddhantShah.pdf"
 import React from 'react';
 export default function Navbar() {

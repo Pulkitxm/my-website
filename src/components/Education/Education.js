@@ -1,24 +1,28 @@
 import React from "react";
 import EducationCard from "./EducationCard";
 import northeastern from '../../assets/NortheasternLogo.svg'
-import sppu from '../../assets/SPPU_logo.jpeg'
+import sppu from '../../assets/uop_logo.png'
 export default function Education() {
     const northesatern_deets = {
         schoolname: "Northeastern University",
-        schooldeets: "I am studying Computer Science at the Khoury College of Computer Sciences.",
+        schooldeets: `I am building on top of the strong research foundation from Pune University in the fields of Software Development and Artificial Intelligence. 
+        Northeastern has given me the opportunity to explore topics across the field! from Advanced Algorithmic topics in Graph Theory to the foundational topics of Natural Language processing.
+         I have taken a keen interest in Computer Vision as well (For which I had started a blogging series in Summer of 2022).`,
         timeframe: "September 2021 - May 2023"
     };
     const nbn_deets = {
         schoolname: "Savitribai Phule Pune University",
-        schooldeets:`I spent 4 memorable years at Birla Institute of Technology and Science, a premier engineering college in picturesque Pilani! At BITS, I was the coordinator of the Department of Stage Controls, a body responsible for planning and logistics of Auditorium events during Oasis. I was also a member of ACM, BITS Pilani chapter, and the college football team.
-        A few lines are not enough to show my gratitude, but I came here looking for Copper, and I found Gold.`,
+        schooldeets:`
+        For every skill that imparts a high impact on the world, there's a steep learning curve. The curriculum at Savitribai Phule Pune University is aggressively aimed at buidling a strong 
+        foundation that's broad enough to cover every skill conceivable for creating Engineer's of today (read: tomorrow). I have had the good fortune to work on projects that have given me literal chills! 
+        One of them being my work on Software Defined Networks under Prof. Bendale's guidance.
+        `,
         timeframe:"August 2016 - May 2020"
     };
     const n = 2; //number of education cards
-    return(<div className=" grid gap-2 grid-rows ">
-    <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
-    <EducationCard flip="true" logo={sppu} schoolname={nbn_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={nbn_deets.timeframe}/>
+    return(<div className=" flex flex-col space-y-2">
     <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={northesatern_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
+    <EducationCard  logo={sppu} schoolname={nbn_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={nbn_deets.timeframe}/>
     </div>
     );
 }
