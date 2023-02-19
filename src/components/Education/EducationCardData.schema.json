@@ -1,0 +1,27 @@
+{
+    "$schema": "http://json-schema.org/draft-06/schema#",
+    "$ref": "#/definitions/EducationCard",
+    "definitions": {
+        "EducationCard": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+                "schoolname": {
+                    "type": "string"
+                },
+                "schooldeets": {
+                    "type": "string"
+                },
+                "timeframe": {
+                    "type": "string"
+                }
+            },
+            "required": [
+                "schooldeets",
+                "schoolname",
+                "timeframe"
+            ],
+            "title": "Education Card"
+        }
+    }
+}

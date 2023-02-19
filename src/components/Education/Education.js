@@ -1,7 +1,8 @@
 import React from "react";
 import EducationCard from "./EducationCard";
-import northeastern from '../../assets/NortheasternLogo.svg'
-import sppu from '../../assets/uop_logo.png'
+import sppu from '../../assets/uop_logo.png';
+import northeastern from '../../assets/NortheasternLogodark.svg';
+
 export default function Education() {
     const northesatern_deets = {
         schoolname: "Northeastern University",
@@ -20,6 +21,7 @@ export default function Education() {
         timeframe:"August 2016 - May 2020"
     };
     const n = 2; //number of education cards
+
     return(<div className=" flex flex-col space-y-2">
     <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={northesatern_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
     <EducationCard  logo={sppu} schoolname={nbn_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={nbn_deets.timeframe}/>
