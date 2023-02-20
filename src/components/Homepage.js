@@ -3,10 +3,8 @@ import React, {useState} from 'react';
 import profile from '../assets/n.jpg'
 import text_writer from './text_writer';
 import "./Homepage.css";
-import Skills from './Skills';
-import Education from './Education/Education';
 import SocialLinks from './SocialLinks';
-
+import curve from '../assets/curve-hr.svg';
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
     const lines = ["programs.","blogs.","poems.", "stories."];
@@ -45,11 +43,8 @@ export default function Homepage()  {
                     <SocialLinks/>
                 </div>
             </div>
-            
+            <script src='text_writer.js'></script>
         </div>
-        
-        <Education/>
-        <Skills/>
       
         </>
     )
