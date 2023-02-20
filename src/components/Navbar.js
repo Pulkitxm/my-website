@@ -9,11 +9,6 @@ export default function Navbar() {
         <div className="flex justify-between items-center text-white">
             <img src={logo} className=" w-10 rounded-full" alt="logo by tirch studio" />
             <a href="#home" className='text-2xl'>Siddhant Shah</a>  
-            <ul className="hidden md:flex">
-            <li className="p-2 md:text-xl"><a href="#about" className="hover:underline">About</a></li>
-            <li className="p-2 md:text-xl"><a href="#skills" className="hover:underline">Skills</a></li>
-            <li className="p-2 md:text-xl"><a href="#blogs" className="hover:underline">Blogs</a></li>
-            </ul>
             <a href={resume} rel="noreferrer" target="_blank" className=" bg-teal-500 rounded-full px-4 py-1 border border-teal-800 border-4">Resume</a>
         </div>
         

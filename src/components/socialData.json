@@ -1,0 +1,6 @@
+{"links":[
+    {"WebsiteName": "LinkedIn", "WebsiteURL":"https://www.linkedin.com/in/thesidshah/", "WebsiteLogoLight":"../assets/Socials/linkedin.svg","WebsiteLogoDark":""},
+    {"WebsiteName":"Github", "WebsiteURL":"https://github.com/thesidshah", "WebsiteLogoLight":"../assets/Socials/github.svg","WebsiteLogoDark":""},
+    {"WebsiteName":"Medium","WebsiteURL":"https://siddhant-shah.medium.com/", "WebsiteLogoLight":"../assets/Socials/medium.svg","WebsiteLogoDark":""}
+    ]
+}

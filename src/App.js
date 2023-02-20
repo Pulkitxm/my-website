@@ -1,10 +1,10 @@
 
 import './App.css';
-import {useEffect} from 'react'
+import {useEffect} from 'react';
 import AOS from 'aos';
 import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
-import './components/branding.css'
+import './components/branding.css';
 
 function App() {
   useEffect(() => {
@@ -20,7 +20,7 @@ function App() {
   localStorage.theme = "light";
   return (
     <div className="App">
-      <div className="px-6 lg:px-20 xl:px-36 bg-slate-100 dark:bg-dark-900 dark:text-white dark:">
+      <div className="px-6 lg:px-20 xl:px-36 bg-slate-100 dark:bg-dark-900 dark:text-white ">
       <Navbar />
       <Homepage/>
     </div>

@@ -1,9 +1,16 @@
 import React from "react";
 import EducationCard from "./EducationCard";
 import sppu from '../../assets/uop_logo.png';
-import northeastern from '../../assets/NortheasternLogodark.svg';
+import northeasternDark from '../../assets/NortheasternLogodark.svg';
+import northeasternLight from '../../assets/NortheasternLogo.svg';
 
 export default function Education() {
+    if(localStorage.theme == 'light') {
+        var northeastern = northeasternLight;
+    }
+    else {
+        var northeastern = northeasternLight;
+    }
     const northesatern_deets = {
         schoolname: "Northeastern University",
         schooldeets: `I am building on top of the strong research foundation from Pune University in the fields of Software Development and Artificial Intelligence. 
