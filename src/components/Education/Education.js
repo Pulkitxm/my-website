@@ -31,7 +31,6 @@ export default function Education() {
     return(<div className=" flex flex-col space-y-2">
     <EducationCard  logo={northeastern} schoolname={northesatern_deets.schoolname} schooldeets={northesatern_deets.schooldeets} timeframe={northesatern_deets.timeframe}/>
     <EducationCard  logo={sppu} schoolname={nbn_deets.schoolname} schooldeets={nbn_deets.schooldeets} timeframe={nbn_deets.timeframe}/>
-    
     </div>
     );
 }

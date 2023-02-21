@@ -30,11 +30,10 @@ function App() {
       <Navbar />
       <Homepage/>
       <img src={curve} className="w-full md:h-2 " alt="hr" />
-        <h1 className='text-3xl md:text-5xl m-10 pb-10'>Education and Experiences</h1>
-        <Education/>
-        <img src={curve} className="w-full md:h-2 " alt="hr" />
-        <Experience/>
-        <Skills/>
+      <h1 className='text-3xl md:text-5xl m-10 pb-10'>Education and Experiences</h1>
+      <Experience/>
+      <Education/>
+      <Skills/>
       
     </div>
     </div>

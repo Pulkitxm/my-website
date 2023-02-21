@@ -37,7 +37,6 @@ export default function Homepage()  {
                     data-period="200"
                     data-rotate={lines}
                     ></span></h4>
-                
                 </div>
                 <div className='md:absolute md:left-0 md:top-1/3'>
                     <SocialLinks/>

@@ -13,8 +13,8 @@ return(
 )}
 </ul>
   </div>
-  <div class="items-center md:w-1/4 m-4 ">
-    <img src={args.Logo} className="inline h-40"/>
+  <div class="items-center  md:w-1/4 m-4 ">
+    <img src={args.Logo} className="inline w-40 h-40"/>
   </div>
 </div>
 

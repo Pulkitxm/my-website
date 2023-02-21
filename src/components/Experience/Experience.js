@@ -14,6 +14,7 @@ const Experience=()=> {
     return(
         <div className='flex flex-col my-10 gap-4'>
             <ExperienceCard Logo={IotIot} CompanyName = {IoTIoT['Company Name']} Points = {IoTIoT.Points}/>
+            
             <ExperienceCard Logo={Globant} CompanyName = {GlobantPoints['Company Name']} Points = {GlobantPoints.Points}/>
         </div>
     )
