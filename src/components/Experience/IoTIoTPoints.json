@@ -1,0 +1,7 @@
+{
+    "Company Name": "IoTIoT.in",
+    "Points": [
+        "Conducted experiments with Convolutional Neural Networks (CNNs) to create a facial recoginition system that is cost efficient and requires as less as 15 data points of the face.",
+        "Used TensorFlow, Keras, NumPy and other libraries based in Python and interfaced it with the startup’s ShunyaOS on Raspberry Pi, reached accuracy levels of about 91%."
+    ]
+}
