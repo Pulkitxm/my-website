@@ -4,7 +4,7 @@ return(
 <div class="flex flex-col md:flex-row grow ">
   
   <div class=" md:w-3/4">
-    <h4 className="md:text-4xl mb-2 inline">{args.CompanyName}</h4>
+    <h4 className="text-xl md:text-4xl mb-2 inline">{args.CompanyName}</h4>
 <ul className="text-justify">
 {args.Points.map((value) =>
 {
