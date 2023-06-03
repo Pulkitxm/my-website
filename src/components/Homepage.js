@@ -1,14 +1,16 @@
 
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import profile from '../assets/n.jpg'
 import text_writer from './text_writer';
 import "./Homepage.css";
 import SocialLinks from './SocialLinks';
 import curve from '../assets/curve-hr.svg';
+import Education from './Education/Education';
+import Experience from './Experience/Experience'
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
     const lines = ["programs.","blogs.","poems.", "stories."];
-    text_writer();
+    useEffect(() => {text_writer()}, []);
     return(
         <>
             {
@@ -38,13 +40,16 @@ export default function Homepage()  {
                     data-rotate={lines}
                     ></span></h4>
                 </div>
-                <div className='md:absolute md:left-0 md:top-1/3'>
+                {/* <div className='md:absolute md:left-0 md:top-1/3'>  Removing this so that it comes right under write, and then that makes sense even if the css is not injected, which is common in most devices 
+                I am unable to solve the CSS issue. */ }
                     <SocialLinks/>
-                </div>
+                {/* </div> */}
+                
             </div>
             <script src='text_writer.js'></script>
         </div>
-      
+        <Education/>
+        <Experience/>
         </>
     )
 }
