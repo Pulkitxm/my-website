@@ -21,7 +21,8 @@ const SocialLinks = () => {
     // );
     return (<div>
                 
-    <ul className='flex flex-row m-7 justify-center items-center md:flex-col inset-0 gap-4'>
+    {/* <ul className='flex flex-row m-7 justify-center items-center md:flex-col inset-0 gap-4'> */}
+    <ul className='flex flex-row m-7 justify-center items-center inset-0 gap-4'>
         <li>
             <a href='https://linkedin.com/in/thesidshah' rel="noreferrer" target="_blank"><FontAwesomeIcon size='2xl' icon={faLinkedinIn} /></a>
         </li>
