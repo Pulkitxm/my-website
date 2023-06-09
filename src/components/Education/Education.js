@@ -22,7 +22,7 @@ export default function Education() {
         schoolname: "Savitribai Phule Pune University",
         schooldeets:`
         For every skill that imparts a high impact on the world, there's a steep learning curve. The curriculum at Savitribai Phule Pune University is aggressively aimed at buidling a strong 
-        foundation that's broad enough to cover every skill conceivable for creating Engineer's of today (read: tomorrow). I have had the good fortune to work on projects that have given me literal chills! 
+        foundation that's broad enough to cover every skill conceivable for creating Engineers of today (read: tomorrow). I have had the good fortune to work on projects that have given me literal chills! 
         One of them being my work on Software Defined Networks under Prof. Bendale's guidance.
         `,
         timeframe:"August 2016 - May 2020"
