@@ -6,11 +6,20 @@ import "./Homepage.css";
 import SocialLinks from './SocialLinks';
 import curve from '../assets/curve-hr.svg';
 import Education from './Education/Education';
-import Experience from './Experience/Experience'
+import Experience from './Experience/Experience';
+import Skills from '../components/Skills';
+import { ArrowSmallDownIcon } from '@heroicons/react/24/outline';
+import { Disclosure } from '@headlessui/react';
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
     const lines = ["programs.","blogs.","poems.", "stories."];
     useEffect(() => {text_writer()}, []);
+    const handleClick = () => {
+        const educationDiv = document.getElementById('Resume');
+        if (educationDiv) {
+          educationDiv.scrollIntoView({ behavior: 'smooth' });
+        }
+      };
     return(
         <>
             {
@@ -43,13 +52,25 @@ export default function Homepage()  {
                 {/* <div className='md:absolute md:left-0 md:top-1/3'>  Removing this so that it comes right under write, and then that makes sense even if the css is not injected, which is common in most devices 
                 I am unable to solve the CSS issue. */ }
                     <SocialLinks/>
+                    
                 {/* </div> */}
                 
             </div>
+            
             <script src='text_writer.js'></script>
         </div>
+        <Disclosure as="div" className='flex justify-center items-center'>
+            
+                    <Disclosure.Button className='-translate-y-28  flex flex-col items-center justify-center hover:animate-pulse' onClick={handleClick} >
+                        scroll for single page resume
+                    <ArrowSmallDownIcon className="block h-6 w-6 " aria-hidden="true"/>
+                    </Disclosure.Button>
+                    </Disclosure>
+        <div id='Resume'>
         <Education/>
         <Experience/>
+        <Skills/>
+        </div>
         </>
     )
 }
