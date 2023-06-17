@@ -1,7 +1,6 @@
 
 import React, {useEffect, useState} from 'react';
 import profile from '../assets/n.jpg'
-import text_writer from './text_writer';
 import "./Homepage.css";
 import SocialLinks from './SocialLinks';
 import curve from '../assets/curve-hr.svg';
@@ -10,10 +9,10 @@ import Experience from './Experience/Experience';
 import Skills from '../components/Skills';
 import { ArrowSmallDownIcon } from '@heroicons/react/24/outline';
 import { Disclosure } from '@headlessui/react';
+import TypeWriter from '../TypeWriter';
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
     const lines = ["programs.","blogs.","poems.", "stories."];
-    useEffect(() => {text_writer()}, []);
     const handleClick = () => {
         const educationDiv = document.getElementById('Resume');
         if (educationDiv) {
@@ -43,11 +42,9 @@ export default function Homepage()  {
                 <div className=" flex flex-col w-full mt-8">
                 <p className="text-4xl text-gray-400">Hi, I'm</p>
                 <h1 className="text-6xl font-bold">Siddhant Shah</h1>
-                 <h4 className='text-4xl '>and I write <span
-                    className="txt-rotate"
-                    data-period="200"
-                    data-rotate={lines}
-                    ></span></h4>
+                 <h4 className='text-4xl '>and I write  <TypeWriter/>
+                    
+                    </h4>
                 </div>
                 {/* <div className='md:absolute md:left-0 md:top-1/3'>  Removing this so that it comes right under write, and then that makes sense even if the css is not injected, which is common in most devices 
                 I am unable to solve the CSS issue. */ }
@@ -56,12 +53,10 @@ export default function Homepage()  {
                 {/* </div> */}
                 
             </div>
-            
-            <script src='text_writer.js'></script>
         </div>
         <Disclosure as="div" className='flex justify-center items-center'>
             
-                    <Disclosure.Button className='-translate-y-28  flex flex-col items-center justify-center hover:animate-pulse' onClick={handleClick} >
+                    <Disclosure.Button className='-translate-y-40  flex flex-col items-center justify-center hover:animate-pulse' onClick={handleClick} >
                         scroll for single page resume
                     <ArrowSmallDownIcon className="block h-6 w-6 " aria-hidden="true"/>
                     </Disclosure.Button>
