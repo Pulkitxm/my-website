@@ -3,22 +3,12 @@ import React, {useEffect, useState} from 'react';
 import profile from '../assets/n.jpg'
 import "./Homepage.css";
 import SocialLinks from './SocialLinks';
-import curve from '../assets/curve-hr.svg';
 import Education from './Education/Education';
 import Experience from './Experience/Experience';
 import Skills from '../components/Skills';
-import { ArrowSmallDownIcon } from '@heroicons/react/24/outline';
-import { Disclosure } from '@headlessui/react';
 import TypeWriter from '../TypeWriter';
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
-    const lines = ["programs.","blogs.","poems.", "stories."];
-    const handleClick = () => {
-        const educationDiv = document.getElementById('Resume');
-        if (educationDiv) {
-          educationDiv.scrollIntoView({ behavior: 'smooth' });
-        }
-      };
     return(
         <>
             {
@@ -54,13 +44,6 @@ export default function Homepage()  {
                 
             </div>
         </div>
-        <Disclosure as="div" className='flex justify-center items-center'>
-            
-                    <Disclosure.Button className='-translate-y-40  flex flex-col items-center justify-center hover:animate-pulse' onClick={handleClick} >
-                        scroll for single page resume
-                    <ArrowSmallDownIcon className="block h-6 w-6 " aria-hidden="true"/>
-                    </Disclosure.Button>
-                    </Disclosure>
         <div id='Resume'>
         <Education/>
         <Experience/>
