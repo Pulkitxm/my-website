@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Getting Started with creating your own website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+First edit the [manifest.json](./public/manifest.json) file
 
 ## Available Scripts
 

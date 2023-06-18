@@ -1,24 +1,14 @@
 import social from './socialData.json';
-import { faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleArrowRight, } from "@fortawesome/free-solid-svg-icons";
+
 import {  faGithub, faInstagram, faLinkedinIn, faMedium } from "@fortawesome/free-brands-svg-icons";
 const SocialLinks = () => {
 
-    // return(
-    //     <div>
-    //         {
-    //             social.links.map(
-    //                 (value,index) => (
-    //                     <div>
-    //                         {value.WebsiteName}
-    //                     </div>
-    //                 )
-    //             )
-    //         }
-    //     </div>
-    // );
+    /* need to use the map function to iterate over the social array and then display the icons */
+
+    
+
     return (<div>
                 
     {/* <ul className='flex flex-row m-7 justify-center items-center md:flex-col inset-0 gap-4'> */}
