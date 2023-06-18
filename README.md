@@ -1,6 +1,6 @@
 # Getting Started with creating your own website
 
-First edit the [manifest.json](./public/manifest.json) file
+First edit the [manifest.json](./public/manifest.json) file to reflect your name in place of `Siddhant Shah` aka my name.
 
 ## Available Scripts
 
