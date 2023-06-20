@@ -24,6 +24,9 @@ Current solution is to use JSON files: Which will be created by another API (cur
 
 I have also used a few other open source components, which will be given their due credits.
 
+## Current preview
+"Walk the path you preach" they said. Well, this is my  portfolio website live at [www.siddhantshah.me](https://www.siddhantshah.me) built with the help of some amazing people at Netlify.
+
 ## Available Scripts
 
 In the project directory, you can run:
