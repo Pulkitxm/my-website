@@ -1,6 +1,28 @@
 # Getting Started with creating your own website
 
+## Before we begin
 First edit the [manifest.json](./public/manifest.json) file to reflect your name in place of `Siddhant Shah` aka my name.
+For students who are new to React or for someone who want's to understand what Manifest.json does here's a [resource](https://web.dev/add-manifest/)
+
+## Available sections
+ 
+- Education
+- Experience
+- Timeline
+- Projects
+- Skills
+
+Note: Projects will be worked on in the later stages. There needs quite some work into ideating how someone with no-code experience can create posts about their projects.
+Current solution is to use JSON files: Which will be created by another API (currently under the wraps).
+
+## Frameworks and Libraries used
+
+- React 
+- Tailwind
+- MUI (Material UI)
+- Node
+
+I have also used a few other open source components, which will be given their due credits.
 
 ## Available Scripts
 
