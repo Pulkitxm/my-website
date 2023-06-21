@@ -11,6 +11,7 @@ import './components/branding.css';
 import Education from './components/Education/Education.js';
 // import Experience from './components/Experience/Experience';
 import Projects from './components/Projects/projects';
+import Skills from './components/Skills/skills';
 
 import {BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -34,6 +35,7 @@ function App() {
                   
       <Route index element={<Homepage />}/>
       <Route path='/' element={<Homepage/>}/>
+      <Route path='/skills' element={<Skills/>} />
       <Route path='/projects' element={<Projects/>} />
       <Route path="/*" element={<h1>Not found</h1>}/>
       </Routes>

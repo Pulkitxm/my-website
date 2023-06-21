@@ -7,12 +7,14 @@ import { Disclosure } from '@headlessui/react'; //Menu, Transition
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import logo from '../assets/n.jpg';
 const navigation = [
-  {name: 'Siddhant Shah', href:'./', current: true},
-  { name: 'Education', href: './education', current: false },
-  { name: 'Blogs', href: './blogs', current: false },
-  { name: 'Projects', href: './projects', current: false },
-  { name: 'Experience', href: './experience', current: false },
-]
+  { name: 'Siddhant Shah', href: '/', current: true },
+  { name: 'Education', href: '/education', current: false },
+  { name: 'Blogs', href: '/blogs', current: false },
+  { name: 'Projects', href: '/projects', current: false },
+  { name: 'Skills', href: '/skills', current: false },
+  { name: 'Experience', href: '/experience', current: false },
+];
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')

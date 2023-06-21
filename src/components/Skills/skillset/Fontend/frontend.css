@@ -1,0 +1,44 @@
+.tbl {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tbl table tbody tr .item img{
+    width: 40px;
+}
+
+.item{
+    display: inline-flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.tbl table {
+    font-size: 2em;
+    background-color: #fff;    
+    border-radius: 20px;
+    width: 45vw;
+}
+
+.tbl table tbody tr{
+    height: 100px;
+}
+
+.tbl table thead tr th {
+    padding: 2em 0 0 1em;
+}
+
+.tbl table thead tr th {
+    text-align: center;
+}
+
+.tbl table tbody tr td{
+    border-radius: 30px;
+    transition: .5s;
+}
+.tbl table tbody tr td:hover {
+    background-color: #ebebeb;
+    cursor: pointer;
+    transition: .3s;
+}

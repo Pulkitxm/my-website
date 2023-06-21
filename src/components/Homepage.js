@@ -5,7 +5,6 @@ import "./Homepage.css";
 import SocialLinks from './SocialLinks';
 import Education from './Education/Education';
 import Experience from './Experience/Experience';
-import Skills from '../components/Skills';
 import TypeWriter from '../TypeWriter';
 export default function Homepage()  {
     const [loaded, setLoaded] = useState(true);
@@ -47,7 +46,6 @@ export default function Homepage()  {
         <div id='Resume'>
         <Education/>
         <Experience/>
-        <Skills/>
         </div>
         </>
     )
